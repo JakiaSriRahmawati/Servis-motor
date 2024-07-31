@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <title>About Us</title>
-</head>
-<body>
-    @include('templat.nav')
-
-    <div class="container mt-5">
+@section('title','Home Pelanggan')
+@section('style')
+   <style>
+     .card {
+        transition: transform 0.2s;
+        }
+        .card:hover {
+        transform: scale(1.05);
+        }
+   </style>
+@endsection
+    @section('content')
+        <div class="container mt-5">
         <h1>Welcome to the about us Page</h1>
         <div class="row">
             <div class="col-md-4 mb-4">
@@ -32,10 +32,7 @@
             <h4 class="text-dark mb-12 text-center card-title">SEJARAH</h4>
             <h5 class="text-dark mb-12 text-center card-title">PT Servis Motor Zackk</h5>
         </div>
-    </div>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-</body>
-</html>
-                       
+</div>
+    @endsection
 
-                       
+
