@@ -1,3 +1,4 @@
+@extends('templat.index')
 @section('title','Home Pelanggan')
 @section('style')
    <style>
